@@ -7,19 +7,22 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <h1>🎮 UC SHOP</h1>
-    <p>Пополняй UC быстро и безопасно через администратора</p>
-    
-    <label for="account">ID аккаунта PUBG:</label>
-    <input type="text" id="account" placeholder="Введите ваш ID" required>
+<div class="app">
+  <h1>UC SHOP</h1>
+  <p>Выберите количество UC и отправьте заказ:</p>
 
-    <label for="amount">Количество UC:</label>
-    <input type="number" id="amount" placeholder="Введите сумму" required>
+  <input type="text" id="userId" placeholder="ID аккаунта">
+  
+  <div class="uc-buttons">
+    <button data-uc="100">100 UC</button>
+    <button data-uc="300">300 UC</button>
+    <button data-uc="500">500 UC</button>
+    <button data-uc="1000">1000 UC</button>
+  </div>
 
-    <button id="sendOrder">Сделать заказ</button>
+  <button id="sendOrder">Отправить заказ</button>
+  <p id="status"></p>
 </div>
-
-<script src="app.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
